@@ -1,0 +1,71 @@
+<br>
+<div class="card" >
+    <div class="titulo text-center">
+        <p class="lead">Alta Proceso</p>
+    </div>
+    <div class="cuerpo container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="nombre" class="form-label">Nombre</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="Fecha Inicio" class="form-label">Fecha Inicio</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" id="fechaInicio">
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="Fecha Fin" class="form-label">Fecha Fin</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" id="fechaFin">
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="Plantilla" class="form-label">Plantilla</label>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" aria-label="Seleccionar...">
+                        <option selected>Seleccionar...</option>
+                        <option value="1">Facturación</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <jqxGrid 
+                [width]=1100 
+                [source]="source" 
+                [theme]="'material'" 
+                [autoheight]="true" 
+                [pageable]="true" 
+                [altrows]="true" 
+                [filterable]="true" 
+                [sortable]="true" 
+                [columns]="columns" 
+                #grid>
+                </jqxGrid>
+            </div>
+            <div class="row">&nbsp;</div>
+        </div>
+    </div>
+</div>

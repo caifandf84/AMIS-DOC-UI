@@ -1,0 +1,26 @@
+<br>
+<div class="card" >
+    <div class="titulo text-center">
+        <p class="lead">Usuarios Registrados</p>
+    </div>
+    <div class="cuerpo container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <jqxGrid 
+            [selectionmode]="'checkbox'"
+            [width]=1100 
+            [source]="source" 
+            [theme]="'material'" 
+            [autoheight]="true" 
+            [pageable]="true" 
+            [altrows]="true" 
+            [filterable]="true" 
+            [sortable]="true" 
+            [columns]="columns" 
+            #grid>
+            </jqxGrid>
+        </div>
+        <div class="row">&nbsp;</div>
+    </div>
+</div>
+<br>
